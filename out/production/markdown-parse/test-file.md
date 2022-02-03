@@ -1,4 +1,4 @@
 # Title
 
-[a link!](Invalid Link)
+[a link!](https://something.com)
 [another link!](some-page.html)

@@ -16,7 +16,7 @@ public class MarkdownParse {
             boolean isImage = false;
 
             if (markdown.indexOf("!", nextOpenBracket-1) == nextOpenBracket - 1) isImage = true;
-            
+
 
             if (nextOpenBracket == 0) isImage = false;
 
@@ -25,8 +25,8 @@ public class MarkdownParse {
             int closeParen = markdown.indexOf(")", openParen);
 
             if(nextOpenBracket == -1 || nextCloseBracket == -1 || openParen == -1 || closeParen == -1) {
-		        break;
-	        }
+                break;
+            }
 
             if (openParen - nextCloseBracket > 2) {
                 currentIndex = markdown.indexOf("[", currentIndex + 1);
@@ -39,7 +39,7 @@ public class MarkdownParse {
                 continue;
             }
 
-            
+
 
             if(markdown.substring(nextOpenBracket-1, nextOpenBracket).equals("!")) {
                 currentIndex = closeParen + 1;

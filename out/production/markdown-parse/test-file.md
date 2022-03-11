@@ -1,4 +1,4 @@
 # Title
 
-[a link!](https://something.com)
-[another link!](some-page.html)
+[Link](https://www.minecraft.net/en-us)
+![Image](image.png)
